@@ -1,0 +1,15 @@
+{
+    "company": "Microsoft",
+    "employees": [
+        {
+            "name": "Bill",
+            "age": 44,
+            "department": "Sales"
+        },
+        {
+            "name": "Djon",
+            "age": 34,
+            "department": "Manager"
+        }
+    ]
+}

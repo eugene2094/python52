@@ -1,0 +1,6 @@
+python
+1 hello from python
+2 hello from python
+3 hello from python
+4 hello from python
+дадали новий рядок
