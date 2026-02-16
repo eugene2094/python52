@@ -1,4 +1,7 @@
-class Animal:
+from abc import ABC, abstractmethod
+
+
+class Animal(ABC):
     def __init__(self, name, age):
         self.name = name
         self._age = age
@@ -16,8 +19,11 @@ class Animal:
             raise Exception
         self._age = age
 
+    @abstractmethod
     def speak(self):
         pass
+
+obj = Animal("test",12)
 
 
 class Dog(Animal):
@@ -55,15 +61,12 @@ class Caw(Animal):
 # cat, caw
 
 dog1 = Dog("Sharik", 5)
-print(dog1)
-dog1.age = 3
-print(dog1.age)
-
+# print(dog1)
+# dog1.age = 3
+# print(dog1.age)
+#
 cat1 = Cat('barsik', 10)
 caw1 = Caw('Burenka', 3)
-
-print(caw1)
-print(cat1)
 
 
 class Zoo:
@@ -78,6 +81,7 @@ class Zoo:
         print("Animals in zoo:")
         for animal in self.animals:
             print(animal)
+            animal.speak()
 
 
 zoo = Zoo()
